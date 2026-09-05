@@ -6,4 +6,4 @@
       "dev": "npm run dev -w front",
       "dev:back": "npm run start:dev -w back"
     }
-  }
+}
