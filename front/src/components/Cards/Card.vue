@@ -1,14 +1,8 @@
 <script setup lang="ts">
-interface CardData {
-  badge: string
-  name: string
-  info: string
-  year: string
-  image?: string
-}
+import type { Card } from '@/types/card'
 
 defineProps<{
-  cardData: CardData
+  cardData: Card
 }>()
 </script>
 
