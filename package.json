@@ -1,0 +1,9 @@
+{
+    "name": "jogo-carta-br",
+    "private": true,
+    "workspaces": ["front", "back"],
+    "scripts": {
+      "dev": "npm run dev -w front",
+      "dev:back": "npm run start:dev -w back"
+    }
+  }
