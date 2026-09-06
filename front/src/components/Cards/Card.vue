@@ -1,14 +1,6 @@
-<script setup lang="ts">
-import type { Card } from '@/types/card'
-
-defineProps<{
-  cardData: Card
-}>()
-</script>
-
 <template>
   <article
-    class="flex flex-col items-center w-36 border border-gray-300 bg-white rounded-xl shadow-md p-2"
+    class="card-handle select-none flex flex-col items-center w-36 border border-gray-300 bg-white rounded-xl shadow-md p-2 cursor-grab active:cursor-grabbing"
   >
     <div class="flex justify-items-start w-full">
       <span
@@ -45,3 +37,10 @@ defineProps<{
     </time>
   </article>
 </template>
+<script setup lang="ts">
+import type { Card } from '@/types/card'
+
+defineProps<{
+  cardData: Card
+}>()
+</script>

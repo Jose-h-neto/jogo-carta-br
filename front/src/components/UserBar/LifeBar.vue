@@ -1,5 +1,12 @@
+<script setup lang="ts">
+import { useGameStore } from '@/stores/game'
+
+const game = useGameStore()
+</script>
+
 <template>
-    <div class="bg-red-500 p-4 w-16 h-8"></div>
+  <div class="flex flex-row gap-2">
+    <div v-for="n in game.lives" :key="n" class="w-8 h-8 rounded-full bg-red-400"></div>
+  </div>
 </template>
-<script setup lang="ts"></script>
 <style scoped></style>
